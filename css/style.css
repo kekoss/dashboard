@@ -1,1 +1,269 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+ul,
+ol,
+li {
+  list-style: none;
+}
+img {
+  vertical-align: top;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: inherit;
+  font-size: inherit;
+}
+body,
+html {
+  height: 100%;
+  line-height: 1;
+  font-size: 1rem;
+  color: #000;
+  font-family: "Roboto", sans-serif;
+}
+[class*="__container"] {
+  margin: 0 auto;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 18rem 1fr;
+  grid-template-rows: 12rem repeat(3, 1fr);
+}
+.sidebar {
+  grid-area: 1 / 1 / 5 / 2;
+}
+.sidebar__container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  row-gap: 3rem;
+  background-color: rgb(36, 141, 206);
+  height: 100%;
+  padding: 1rem;
+}
+.sidebar__logo {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+}
+
+.sidebar__logo-icon {
+  width: 3.5rem;
+  height: 3.5rem;
+  fill: #fff;
+}
+.sidebar__logo-title {
+  color: #fff;
+  margin-left: 1rem;
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+.menu {
+  width: 100%;
+}
+.menu__list {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  row-gap: 0.5rem;
+}
+.menu__item {
+  width: 100%;
+}
+.menu__link {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  padding: 0.2rem;
+}
+.menu__link:hover > .menu__link-icon svg {
+  transition: all 0.5s ease 0s;
+  transform: translate(0, -0.3rem);
+}
+
+.menu__link-icon svg {
+  width: 2rem;
+  height: 2rem;
+  fill: #fff;
+}
+.menu__link-title {
+  margin-left: 1rem;
+  color: #fff;
+  font-weight: 700;
+}
+.header {
+  grid-area: 1 / 2 / 2 / 3;
+  box-shadow: 0 2px 10px grey;
+}
+.header__container {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 2rem;
+}
+.header__top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  column-gap: 2rem;
+}
+.header__top-search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 0 1 60%;
+}
+.header__top-search--button {
+  background-color: transparent;
+}
+.header__top-search svg {
+  width: 2rem;
+  height: 2rem;
+}
+.header__top-input {
+  width: 100%;
+  border-radius: 1rem;
+  background-color: rgb(213, 209, 209);
+  margin-left: 2rem;
+  height: 2rem;
+}
+.header__top-profile {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  column-gap: 20px;
+  flex: 0 1 40%;
+}
+.header__top-notification {
+  background-color: transparent;
+}
+.header__top-notification svg {
+  width: 2rem;
+  height: 2rem;
+}
+.header__top-avatar img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+.header__top-username {
+  font-weight: 700;
+  line-height: 1.2;
+}
+.header__bottom {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__bottom-profile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header__bottom-avatar img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+.header__bottom-content {
+  margin-left: 1rem;
+
+  line-height: 1.2;
+}
+.header__bottom-user-title {
+  font-weight: 500;
+}
+.header__bottom-username {
+  font-weight: 700;
+}
+.header__bottom-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 2rem;
+  row-gap: 1rem;
+  flex-wrap: wrap;
+}
+.header__bottom-button {
+  padding: 0.75rem 2rem;
+  background-color: rgb(36, 141, 206);
+  color: #fff;
+  font-weight: 700;
+  border-radius: 1.5rem;
+}
+.page {
+  grid-area: 2 / 2 / 5 / 3;
+}
+.projects {
+}
+.projects__container {
+}
+.projects__title {
+}
+.projects__cards {
+}
+.projects__card {
+}
+.card {
+}
+.card__title {
+}
+.card__text {
+}
+.card__icons svg {
+  width: 2rem;
+  height: 2rem;
+}
+.announcements {
+}
+.announcements__container {
+}
+.announcements__title {
+}
+.announcements__items {
+}
+.announcements__item {
+}
+.announcements__item-title {
+}
+.announcements__item-text {
+}
+.trends {
+}
+.trends__container {
+}
+.trends__title {
+}
+.trends__users {
+}
+.trends__user {
+}
+.trends__profile {
+}
+.trends__profile-name {
+}
+.trends__profile-description {
+}
